@@ -1,8 +1,4 @@
-﻿
-
-
-
-namespace KlassWork
+﻿namespace KlassWork
 {
     public class Program
     {
@@ -90,9 +86,10 @@ namespace KlassWork
             int row = dimArray.GetLength(0);
             int col = dimArray.GetLength(1);
             int [] array = new int [row];
+            int temp;
             for (int i = 0; i < row; i++)
             {
-                int temp = 0;
+                temp = 0;
                 for (int j = 0; j < col; j++)
                 {
                     temp += dimArray[i,j];
