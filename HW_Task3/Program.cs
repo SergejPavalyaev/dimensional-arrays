@@ -10,7 +10,7 @@
         int min = 0;
         int max = 9;
         int [,] dimArray = InitDimArray(row, col, min, max);
-        PrinDimArray(dimArray);
+        PrintDimArray(dimArray);
         int minRow = FindMinRowsSumm(dimArray);
         System.Console.WriteLine($"Required row => {minRow}");
         }
@@ -26,7 +26,7 @@
             }
             return array;
         }
-        static public void PrinDimArray (int [,] array){
+        static public void PrintDimArray (int [,] array){
             int row = array.GetLength(0);
             int col = array.GetLength(1);
             for (int i = 0; i < row; i++)
